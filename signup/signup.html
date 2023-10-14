@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+  <div id="form-validation">
+    <form onsubmit="return signUp(event)" action="./login.html">
+      <h2>SignUp</h2>
+    <input id="name" type="text" placeholder="Enter your name">
+    <input id="pass" type="password" placeholder="Enter your password">
+    <input id="email" type="email" placeholder="Enter your email">
+    <input id="number" type="text" placeholder="Enter your mobile number">
+
+    <select name="" id="" placeholder="select your profession"> 
+      <optgroup label="<------------------------------------------------------------------------------------->">
+        <option value="">select your profession here</option>
+        <option value="">Student</option>
+        <option value="">Teacher</option>
+        <option value="">Doctor</option>
+        <option value="">Pilot</option>
+        <option value="">Engineer</option>
+        <option value="">Others</option>
+      </optgroup>
+    </select>
+
+    <button id="btn" type="submit">Sign Up</button>
+    <a href="./login.html">Already have an Account</a>
+  </form>
+</div>
+  <script src="./signup.js"></script>
+</body>
+</html>
